@@ -12,13 +12,13 @@
   position:absolute;
   z-index:0;
 }
-#u210_div {
+#u238_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
   width:427px;
-  height:100px;
+  height:125px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -31,19 +31,19 @@
   font-style:normal;
   line-height:25px;
 }
-#u210 {
+#u238 {
   border-width:0px;
   position:absolute;
   left:50px;
   top:34px;
   width:427px;
-  height:100px;
+  height:125px;
   font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
   font-weight:600;
   font-style:normal;
   line-height:25px;
 }
-#u210_text {
+#u238_text {
   border-width:0px;
   position:absolute;
   left:0px;
