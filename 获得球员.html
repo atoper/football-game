@@ -25,18 +25,187 @@
     <div id="base" class="">
 
       <!-- Unnamed (矩形) -->
-      <div id="u624" class="ax_default label">
-        <div id="u624_div" class=""></div>
-        <div id="u624_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;font-size:18px;">获得球员的途径</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、通过“转会市场”购买其他玩家的出售球员</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、主动询价购买其他玩家的持有球员</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、孵化新球员（类似游戏开宝箱，有几率以低价获得高价值球员）</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、续约保持已有球员的使用权（按球员预估身价进行续约）</span></p>
+      <div id="u653" class="ax_default label">
+        <div id="u653_div" class=""></div>
+        <div id="u653_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;font-size:18px;">获得球员的途径</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、通过“转会市场”购买其他玩家的出售球员</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通过“青训营”孵化新球员（类似游戏开宝箱，有几率以低价获得高价值球员）</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、续约保持已有球员的使用权（按球员预估身价进行续约）</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u625" class="ax_default _文本段落">
-        <div id="u625_div" class=""></div>
-        <div id="u625_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">转会市场</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、可交易球员的信息展示</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 展示所有出售的球员，含球员售价与属性相关信息</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、球员的交易方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 一口价：按定价直接购买，优先完成交易支付的玩家获得对应球员</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍：每一次竞拍按初始低价自动升高2.5%，拍卖时间结束后默认由实际可支付的最高出价者获得对应球员</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、手续费</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 交易成功后，由达成交易的买方支付一定金额的手续费（手续费进入联赛奖金池）</span></p>
+      <div id="u654" class="ax_default _文本段落">
+        <div id="u654_div" class=""></div>
+        <div id="u654_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">转会市场</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、可交易球员的信息展示</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 展示所有出售的球员，含球员售价与属性相关信息</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、球员的交易方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍提价：每一次竞拍按初始低价自动升高2.5%，拍卖时间结束后默认由实际可支付的最高出价者获得对应球员</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 余额判断：当前余额是否足够完成本次提价竞拍（含竞拍价+手续费）</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 预扣joy币：出价成功后预扣对应金额的joy币（含竞拍价+手续费）</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍成功：截止竞拍时间后，已最高价竞拍成功则完成交易，将对应球员从原所得者转至成功竞拍者名下</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍价被其他竞拍者超越：提示原出价者，并退回预扣joy币</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、手续费</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 出价竞拍时，会连带竞拍价和对应手续费一起预扣</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 交易成功后，由达成交易的买方支付一定金额的手续费（手续费进入联赛奖金池）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u655" class="ax_default flow_shape">
+        <div id="u655_div" class=""></div>
+        <div id="u655_text" class="text ">
+          <p><span>竞拍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u656" class="ax_default flow_shape">
+        <img id="u656_img" class="img " src="images/启动app/u620.png"/>
+        <div id="u656_text" class="text ">
+          <p><span>是否已截止竞拍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u657" class="ax_default _连接线">
+        <img id="u657_seg0" class="img " src="images/创建球队/u642_seg0.png" alt="u657_seg0"/>
+        <img id="u657_seg1" class="img " src="images/启动app/u621_seg1.png" alt="u657_seg1"/>
+        <div id="u657_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u658" class="ax_default _连接线">
+        <img id="u658_seg0" class="img " src="images/获得球员/u658_seg0.png" alt="u658_seg0"/>
+        <img id="u658_seg1" class="img " src="images/启动app/u621_seg1.png" alt="u658_seg1"/>
+        <div id="u658_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u659" class="ax_default _连接线">
+        <img id="u659_seg0" class="img " src="images/获得球员/u659_seg0.png" alt="u659_seg0"/>
+        <img id="u659_seg1" class="img " src="images/创建球队/u646_seg1.png" alt="u659_seg1"/>
+        <div id="u659_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u660" class="ax_default flow_shape">
+        <div id="u660_div" class=""></div>
+        <div id="u660_text" class="text ">
+          <p><span>提示竞拍已结束</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u661" class="ax_default flow_shape">
+        <img id="u661_img" class="img " src="images/启动app/u620.png"/>
+        <div id="u661_text" class="text ">
+          <p><span>当前竞拍价</span></p><p><span>是否超出当前账户余额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u662" class="ax_default flow_shape">
+        <div id="u662_div" class=""></div>
+        <div id="u662_text" class="text ">
+          <p><span>提示余额不足</span></p><p><span>并引导进行充值</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u663" class="ax_default _连接线">
+        <img id="u663_seg0" class="img " src="images/获得球员/u659_seg0.png" alt="u663_seg0"/>
+        <img id="u663_seg1" class="img " src="images/创建球队/u646_seg1.png" alt="u663_seg1"/>
+        <div id="u663_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (平行四边形) -->
+      <div id="u664" class="ax_default flow_shape">
+        <img id="u664_img" class="img " src="images/获得球员/u664.png"/>
+        <div id="u664_text" class="text ">
+          <p><span>出价成功</span></p><p><span>预扣竞拍币</span></p><p><span>含交易费</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u665" class="ax_default _连接线">
+        <img id="u665_seg0" class="img " src="images/获得球员/u665_seg0.png" alt="u665_seg0"/>
+        <img id="u665_seg1" class="img " src="images/启动app/u621_seg1.png" alt="u665_seg1"/>
+        <div id="u665_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u666" class="ax_default flow_shape">
+        <img id="u666_img" class="img " src="images/启动app/u620.png"/>
+        <div id="u666_text" class="text ">
+          <p><span>已出竞拍价</span></p><p><span>是否被超越</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u667" class="ax_default _连接线">
+        <img id="u667_seg0" class="img " src="images/获得球员/u667_seg0.png" alt="u667_seg0"/>
+        <img id="u667_seg1" class="img " src="images/启动app/u621_seg1.png" alt="u667_seg1"/>
+        <div id="u667_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u668" class="ax_default _连接线">
+        <img id="u668_seg0" class="img " src="images/获得球员/u668_seg0.png" alt="u668_seg0"/>
+        <img id="u668_seg1" class="img " src="images/启动app/u621_seg1.png" alt="u668_seg1"/>
+        <div id="u668_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (平行四边形) -->
+      <div id="u669" class="ax_default flow_shape">
+        <img id="u669_img" class="img " src="images/获得球员/u664.png"/>
+        <div id="u669_text" class="text ">
+          <p><span>竞拍</span></p><p><span>倒计时结束</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u670" class="ax_default flow_shape">
+        <div id="u670_div" class=""></div>
+        <div id="u670_text" class="text ">
+          <p><span>提示竞拍成功</span></p><p><span>完成球员交易</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u671" class="ax_default _连接线">
+        <img id="u671_seg0" class="img " src="images/创建球队/u642_seg0.png" alt="u671_seg0"/>
+        <img id="u671_seg1" class="img " src="images/启动app/u621_seg1.png" alt="u671_seg1"/>
+        <div id="u671_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u672" class="ax_default flow_shape">
+        <div id="u672_div" class=""></div>
+        <div id="u672_text" class="text ">
+          <p><span>提示已被超越</span></p><p><span>并退回预扣币</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u673" class="ax_default _连接线">
+        <img id="u673_seg0" class="img " src="images/获得球员/u659_seg0.png" alt="u673_seg0"/>
+        <img id="u673_seg1" class="img " src="images/创建球队/u646_seg1.png" alt="u673_seg1"/>
+        <div id="u673_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u674" class="ax_default _文本段落">
+        <div id="u674_div" class=""></div>
+        <div id="u674_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">青训营</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、</span></p>
         </div>
       </div>
     </div>
