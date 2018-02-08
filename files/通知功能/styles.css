@@ -3,7 +3,7 @@
   background-image:none;
   position:static;
   left:auto;
-  width:1067px;
+  width:623px;
   margin-left:0;
   margin-right:0;
   text-align:left;
@@ -12,7 +12,7 @@
   position:absolute;
   z-index:0;
 }
-#u927_div {
+#u944_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -32,7 +32,7 @@
   font-size:18px;
   line-height:25px;
 }
-#u927 {
+#u944 {
   border-width:0px;
   position:absolute;
   left:50px;
@@ -45,7 +45,7 @@
   font-size:18px;
   line-height:25px;
 }
-#u927_text {
+#u944_text {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -53,7 +53,7 @@
   width:73px;
   white-space:nowrap;
 }
-#u928_div {
+#u945_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -73,11 +73,11 @@
   font-size:14px;
   line-height:25px;
 }
-#u928 {
+#u945 {
   border-width:0px;
   position:absolute;
   left:50px;
-  top:668px;
+  top:758px;
   width:573px;
   height:425px;
   font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
@@ -86,7 +86,7 @@
   font-size:14px;
   line-height:25px;
 }
-#u928_text {
+#u945_text {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -94,7 +94,7 @@
   width:573px;
   white-space:nowrap;
 }
-#u929_div {
+#u946_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -114,7 +114,7 @@
   font-size:14px;
   line-height:25px;
 }
-#u929 {
+#u946 {
   border-width:0px;
   position:absolute;
   left:50px;
@@ -127,7 +127,7 @@
   font-size:14px;
   line-height:25px;
 }
-#u929_text {
+#u946_text {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -135,7 +135,7 @@
   width:79px;
   white-space:nowrap;
 }
-#u930_div {
+#u947_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -155,11 +155,11 @@
   font-size:14px;
   line-height:25px;
 }
-#u930 {
+#u947 {
   border-width:0px;
   position:absolute;
-  left:844px;
-  top:241px;
+  left:50px;
+  top:391px;
   width:223px;
   height:225px;
   font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
@@ -168,7 +168,7 @@
   font-size:14px;
   line-height:25px;
 }
-#u930_text {
+#u947_text {
   border-width:0px;
   position:absolute;
   left:0px;
