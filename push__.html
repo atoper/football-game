@@ -1,0 +1,2718 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Push功能</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/push__/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/push__/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1112" class="ax_default label">
+        <div id="u1112_div" class=""></div>
+        <div id="u1112_text" class="text ">
+          <p><span>Push功能</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1113" class="ax_default _文本段落">
+        <div id="u1113_div" class=""></div>
+        <div id="u1113_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">受邀为其他球员进行训练</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 玩家对系统推荐的玩家教练发出训练邀请时</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 受邀教练球员的玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 训练双方球员、耗时、获得报酬</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 同意：系统校验双方球员是否已与其他球员产生训练关系，均处于空闲状态时，点击“同意”达成本次训练，并关闭弹窗</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 拒绝：拒绝本次训练，并关闭弹窗，系统退还预扣费</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 系统通知：用户处于APP外时通过手机系统push进行通知提醒，点击进入APP首页，并弹出消息操作面板</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 消息面板：用户处于APP内时，在当前页面直接弹出此消息操作面板</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1114" class="ax_default _文本段落">
+        <div id="u1114_div" class=""></div>
+        <div id="u1114_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">消息类型</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、联赛结果</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、训练消息</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、竞拍消息</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、合约提醒</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">5、系统消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1115" class="ax_default _文本段落">
+        <div id="u1115_div" class=""></div>
+        <div id="u1115_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">消息状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、未读</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 用户收到消息后，查阅前，为未读消息</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、已读</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 用户收到消息后，通过消息提醒方式完成查阅操作，即视为已读消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1116" class="ax_default _文本段落">
+        <div id="u1116_div" class=""></div>
+        <div id="u1116_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">Push提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、系统通知</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 适用于用户未处于APP界面时的场景（其他界面或锁屏）通过系统通知进行提醒</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、消息弹出面板</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 适用于需用户进行回应操作的场景，且用户处于APP内时，直接弹出消息面板（带操作选项）</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、数字气泡</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 通用消息提醒场景，位于消息界面入口位置展示未读消息数量</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1117" class="ax_default _文本段落">
+        <div id="u1117_div" class=""></div>
+        <div id="u1117_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">系统通知提醒管理</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、防打扰</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 设置特定时段不接受消息的系统通知提醒</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、过滤消息类型</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 设置不接收指定消息的系统通知提醒</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1118" class="ax_default _文本段落">
+        <div id="u1118_div" class=""></div>
+        <div id="u1118_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">球员解约push</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员合约到期且未续约</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员原持有玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员信息+解约说明</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (热区) -->
+      <div id="u1119" class="ax_default">
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1120" class="ax_default _文本段落">
+        <div id="u1120_div" class=""></div>
+        <div id="u1120_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">联赛结果Push</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 联赛结束即进行通知</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、Push对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 当前联赛对应所有参赛玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、push内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 联赛名次、升降级提示、联赛奖金</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 系统通知：用户处于APP外时通过手机系统push进行通知提醒，点击进入消息界面</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡 ：用户处于APP内时，显示消息气泡引导用户查阅消息，点击已读后消除数字气泡</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1121" class="ax_default" data-left="50" data-top="2027" data-width="360" data-height="802">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1122" class="ax_default box_1">
+          <div id="u1122_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1123" class="ax_default _三级标题">
+          <div id="u1123_div" class=""></div>
+          <div id="u1123_text" class="text ">
+            <p><span>联赛结果</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1124" class="ax_default _图片">
+          <img id="u1124_img" class="img " src="images/交互原型/u41.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1125" class="ax_default box_2">
+          <div id="u1125_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1126" class="ax_default box_2">
+          <div id="u1126_div" class=""></div>
+          <div id="u1126_text" class="text ">
+            <p><span>联赛</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1127" class="ax_default _文本段落">
+          <div id="u1127_div" class=""></div>
+          <div id="u1127_text" class="text ">
+            <p><span>刚刚</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1128" class="ax_default _文本段落">
+          <div id="u1128_div" class=""></div>
+          <div id="u1128_text" class="text ">
+            <p><span>联赛结果</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1129" class="ax_default _文本段落">
+          <div id="u1129_div" class=""></div>
+          <div id="u1129_text" class="text ">
+            <p><span>联赛战绩：</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1130" class="ax_default box_2">
+          <div id="u1130_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1131" class="ax_default box_2">
+          <div id="u1131_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1132" class="ax_default label">
+          <div id="u1132_div" class=""></div>
+          <div id="u1132_text" class="text ">
+            <p><span>联赛排名</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1133" class="ax_default label">
+          <div id="u1133_div" class=""></div>
+          <div id="u1133_text" class="text ">
+            <p><span>胜</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1134" class="ax_default label">
+          <div id="u1134_div" class=""></div>
+          <div id="u1134_text" class="text ">
+            <p><span>负</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1135" class="ax_default label">
+          <div id="u1135_div" class=""></div>
+          <div id="u1135_text" class="text ">
+            <p><span>平</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1136" class="ax_default label">
+          <div id="u1136_div" class=""></div>
+          <div id="u1136_text" class="text ">
+            <p><span>积分</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1137" class="ax_default box_2">
+          <div id="u1137_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1138" class="ax_default label">
+          <div id="u1138_div" class=""></div>
+          <div id="u1138_text" class="text ">
+            <p><span>5</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1139" class="ax_default label">
+          <div id="u1139_div" class=""></div>
+          <div id="u1139_text" class="text ">
+            <p><span>28</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1140" class="ax_default label">
+          <div id="u1140_div" class=""></div>
+          <div id="u1140_text" class="text ">
+            <p><span>5</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1141" class="ax_default label">
+          <div id="u1141_div" class=""></div>
+          <div id="u1141_text" class="text ">
+            <p><span>20</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1142" class="ax_default label">
+          <div id="u1142_div" class=""></div>
+          <div id="u1142_text" class="text ">
+            <p><span>19</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1143" class="ax_default _文本段落">
+          <div id="u1143_div" class=""></div>
+          <div id="u1143_text" class="text ">
+            <p><span>您的球队在本轮联赛中获得第19名，已降级~</span></p><p><span>球队已由【超级联赛球队】降级为【甲级联赛球队】</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1144" class="ax_default _文本段落">
+          <div id="u1144_div" class=""></div>
+          <div id="u1144_text" class="text ">
+            <p><span>联赛奖金：降级球队无奖金</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1145" class="ax_default box_2">
+          <div id="u1145_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1146" class="ax_default box_2">
+          <div id="u1146_div" class=""></div>
+          <div id="u1146_text" class="text ">
+            <p><span>联赛</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1147" class="ax_default _文本段落">
+          <div id="u1147_div" class=""></div>
+          <div id="u1147_text" class="text ">
+            <p><span>10分钟前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1148" class="ax_default _文本段落">
+          <div id="u1148_div" class=""></div>
+          <div id="u1148_text" class="text ">
+            <p><span>联赛结果</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1149" class="ax_default _文本段落">
+          <div id="u1149_div" class=""></div>
+          <div id="u1149_text" class="text ">
+            <p><span>联赛战绩：</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1150" class="ax_default box_2">
+          <div id="u1150_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1151" class="ax_default box_2">
+          <div id="u1151_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1152" class="ax_default label">
+          <div id="u1152_div" class=""></div>
+          <div id="u1152_text" class="text ">
+            <p><span>联赛排名</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1153" class="ax_default label">
+          <div id="u1153_div" class=""></div>
+          <div id="u1153_text" class="text ">
+            <p><span>胜</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1154" class="ax_default label">
+          <div id="u1154_div" class=""></div>
+          <div id="u1154_text" class="text ">
+            <p><span>负</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1155" class="ax_default label">
+          <div id="u1155_div" class=""></div>
+          <div id="u1155_text" class="text ">
+            <p><span>平</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1156" class="ax_default label">
+          <div id="u1156_div" class=""></div>
+          <div id="u1156_text" class="text ">
+            <p><span>积分</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1157" class="ax_default box_2">
+          <div id="u1157_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1158" class="ax_default label">
+          <div id="u1158_div" class=""></div>
+          <div id="u1158_text" class="text ">
+            <p><span>30</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1159" class="ax_default label">
+          <div id="u1159_div" class=""></div>
+          <div id="u1159_text" class="text ">
+            <p><span>5</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1160" class="ax_default label">
+          <div id="u1160_div" class=""></div>
+          <div id="u1160_text" class="text ">
+            <p><span>3</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1161" class="ax_default label">
+          <div id="u1161_div" class=""></div>
+          <div id="u1161_text" class="text ">
+            <p><span>93</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1162" class="ax_default label">
+          <div id="u1162_div" class=""></div>
+          <div id="u1162_text" class="text ">
+            <p><span>1</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1163" class="ax_default _文本段落">
+          <div id="u1163_div" class=""></div>
+          <div id="u1163_text" class="text ">
+            <p><span>恭喜！您的球队在本轮联赛中获得第1名，已成功晋级~</span></p><p><span>由【甲级联赛球队】晋级为【超级联赛球队】</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1164" class="ax_default _文本段落">
+          <div id="u1164_div" class=""></div>
+          <div id="u1164_text" class="text ">
+            <p><span>联赛奖金：26000Joy&nbsp; 已到账</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1165" class="ax_default box_2">
+          <div id="u1165_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1166" class="ax_default box_2">
+          <div id="u1166_div" class=""></div>
+          <div id="u1166_text" class="text ">
+            <p><span>联赛</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1167" class="ax_default _文本段落">
+          <div id="u1167_div" class=""></div>
+          <div id="u1167_text" class="text ">
+            <p><span>1小时前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1168" class="ax_default _文本段落">
+          <div id="u1168_div" class=""></div>
+          <div id="u1168_text" class="text ">
+            <p><span>联赛结果</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1169" class="ax_default _文本段落">
+          <div id="u1169_div" class=""></div>
+          <div id="u1169_text" class="text ">
+            <p><span>联赛战绩：</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1170" class="ax_default box_2">
+          <div id="u1170_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1171" class="ax_default box_2">
+          <div id="u1171_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1172" class="ax_default label">
+          <div id="u1172_div" class=""></div>
+          <div id="u1172_text" class="text ">
+            <p><span>联赛排名</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1173" class="ax_default label">
+          <div id="u1173_div" class=""></div>
+          <div id="u1173_text" class="text ">
+            <p><span>胜</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1174" class="ax_default label">
+          <div id="u1174_div" class=""></div>
+          <div id="u1174_text" class="text ">
+            <p><span>负</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1175" class="ax_default label">
+          <div id="u1175_div" class=""></div>
+          <div id="u1175_text" class="text ">
+            <p><span>平</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1176" class="ax_default label">
+          <div id="u1176_div" class=""></div>
+          <div id="u1176_text" class="text ">
+            <p><span>积分</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1177" class="ax_default box_2">
+          <div id="u1177_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1178" class="ax_default label">
+          <div id="u1178_div" class=""></div>
+          <div id="u1178_text" class="text ">
+            <p><span>20</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1179" class="ax_default label">
+          <div id="u1179_div" class=""></div>
+          <div id="u1179_text" class="text ">
+            <p><span>8</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1180" class="ax_default label">
+          <div id="u1180_div" class=""></div>
+          <div id="u1180_text" class="text ">
+            <p><span>10</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1181" class="ax_default label">
+          <div id="u1181_div" class=""></div>
+          <div id="u1181_text" class="text ">
+            <p><span>70</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1182" class="ax_default label">
+          <div id="u1182_div" class=""></div>
+          <div id="u1182_text" class="text ">
+            <p><span>6</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1183" class="ax_default _文本段落">
+          <div id="u1183_div" class=""></div>
+          <div id="u1183_text" class="text ">
+            <p><span>您的球队在本轮联赛中获得第6名，保级成功~</span></p><p><span>当前为【甲级联赛球队】</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1184" class="ax_default _文本段落">
+          <div id="u1184_div" class=""></div>
+          <div id="u1184_text" class="text ">
+            <p><span>联赛奖金：10000Joy&nbsp; 已到账</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1185" class="ax_default" data-left="50" data-top="7763" data-width="360" data-height="944">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1186" class="ax_default box_1">
+          <div id="u1186_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1187" class="ax_default _三级标题">
+          <div id="u1187_div" class=""></div>
+          <div id="u1187_text" class="text ">
+            <p><span>消息通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1188" class="ax_default _图片">
+          <img id="u1188_img" class="img " src="images/交互原型/u41.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1189" class="ax_default box_2">
+          <div id="u1189_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1190" class="ax_default _文本段落">
+          <div id="u1190_div" class=""></div>
+          <div id="u1190_text" class="text ">
+            <p><span>刚刚</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1191" class="ax_default _文本段落">
+          <div id="u1191_div" class=""></div>
+          <div id="u1191_text" class="text ">
+            <p><span>训练邀请已同意</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1192" class="ax_default _文本段落">
+          <div id="u1192_div" class=""></div>
+          <div id="u1192_text" class="text ">
+            <p><span>【Lionel Messi】的训练邀请已达成</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1193" class="ax_default box_2">
+          <div id="u1193_div" class=""></div>
+          <div id="u1193_text" class="text ">
+            <p><span>训练</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1194" class="ax_default _文本段落">
+          <div id="u1194_div" class=""></div>
+          <div id="u1194_text" class="text ">
+            <p><span>训练进行中，将在2018/03/03 12:12完成本次训练</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1195" class="ax_default _图片">
+          <img id="u1195_img" class="img " src="images/push__/u1195.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1196" class="ax_default _图片">
+          <img id="u1196_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1197" class="ax_default _文本段落">
+          <div id="u1197_div" class=""></div>
+          <div id="u1197_text" class="text ">
+            <p><span>对方球员</span></p><p><span>Lionel Messi</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1198" class="ax_default _文本段落">
+          <div id="u1198_div" class=""></div>
+          <div id="u1198_text" class="text ">
+            <p><span>您的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1199" class="ax_default _文本段落">
+          <div id="u1199_div" class=""></div>
+          <div id="u1199_text" class="text ">
+            <p><span>【射门】训练 ▶</span></p><p><span>进行中</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1200" class="ax_default box_2">
+          <div id="u1200_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1201" class="ax_default _文本段落">
+          <div id="u1201_div" class=""></div>
+          <div id="u1201_text" class="text ">
+            <p><span>10分钟前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1202" class="ax_default _文本段落">
+          <div id="u1202_div" class=""></div>
+          <div id="u1202_text" class="text ">
+            <p><span>训练邀请被回绝</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1203" class="ax_default _文本段落">
+          <div id="u1203_div" class=""></div>
+          <div id="u1203_text" class="text ">
+            <p><span>【Lionel Messi】的训练邀请未达成</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1204" class="ax_default box_2">
+          <div id="u1204_div" class=""></div>
+          <div id="u1204_text" class="text ">
+            <p><span>训练</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1205" class="ax_default _文本段落">
+          <div id="u1205_div" class=""></div>
+          <div id="u1205_text" class="text ">
+            <p><span>对方拒绝了您的训练邀请</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1206" class="ax_default _图片">
+          <img id="u1206_img" class="img " src="images/push__/u1195.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1207" class="ax_default _图片">
+          <img id="u1207_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1208" class="ax_default _文本段落">
+          <div id="u1208_div" class=""></div>
+          <div id="u1208_text" class="text ">
+            <p><span>对方球员</span></p><p><span>Lionel Messi</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1209" class="ax_default _文本段落">
+          <div id="u1209_div" class=""></div>
+          <div id="u1209_text" class="text ">
+            <p><span>您的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1210" class="ax_default _文本段落">
+          <div id="u1210_div" class=""></div>
+          <div id="u1210_text" class="text ">
+            <p><span>【射门】训练 ▶</span></p><p><span>未达成</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1211" class="ax_default box_2">
+          <div id="u1211_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1212" class="ax_default _文本段落">
+          <div id="u1212_div" class=""></div>
+          <div id="u1212_text" class="text ">
+            <p><span>1小时前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1213" class="ax_default _文本段落">
+          <div id="u1213_div" class=""></div>
+          <div id="u1213_text" class="text ">
+            <p><span>训练邀请已失效</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1214" class="ax_default _文本段落">
+          <div id="u1214_div" class=""></div>
+          <div id="u1214_text" class="text ">
+            <p><span>【Lionel Messi】的训练邀请未达成</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1215" class="ax_default box_2">
+          <div id="u1215_div" class=""></div>
+          <div id="u1215_text" class="text ">
+            <p><span>训练</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1216" class="ax_default _文本段落">
+          <div id="u1216_div" class=""></div>
+          <div id="u1216_text" class="text ">
+            <p><span>对方超时未响应</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1217" class="ax_default _图片">
+          <img id="u1217_img" class="img " src="images/push__/u1195.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1218" class="ax_default _图片">
+          <img id="u1218_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1219" class="ax_default _文本段落">
+          <div id="u1219_div" class=""></div>
+          <div id="u1219_text" class="text ">
+            <p><span>对方球员</span></p><p><span>Lionel Messi</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1220" class="ax_default _文本段落">
+          <div id="u1220_div" class=""></div>
+          <div id="u1220_text" class="text ">
+            <p><span>您的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1221" class="ax_default _文本段落">
+          <div id="u1221_div" class=""></div>
+          <div id="u1221_text" class="text ">
+            <p><span>【射门】训练 ▶</span></p><p><span>未达成</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1222" class="ax_default _文本段落">
+          <div id="u1222_div" class=""></div>
+          <div id="u1222_text" class="text ">
+            <p><span>系统已退还邀请训练预扣的4000JOY币</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1223" class="ax_default _文本段落">
+          <div id="u1223_div" class=""></div>
+          <div id="u1223_text" class="text ">
+            <p><span>系统已退还邀请训练预扣的4000JOY币</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1224" class="ax_default" data-left="50" data-top="3694" data-width="360" data-height="744">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1225" class="ax_default box_1">
+          <div id="u1225_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1226" class="ax_default _三级标题">
+          <div id="u1226_div" class=""></div>
+          <div id="u1226_text" class="text ">
+            <p><span>消息通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1227" class="ax_default _图片">
+          <img id="u1227_img" class="img " src="images/交互原型/u41.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1228" class="ax_default box_2">
+          <div id="u1228_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1229" class="ax_default _文本段落">
+          <div id="u1229_div" class=""></div>
+          <div id="u1229_text" class="text ">
+            <p><span>刚刚</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1230" class="ax_default _文本段落">
+          <div id="u1230_div" class=""></div>
+          <div id="u1230_text" class="text ">
+            <p><span>有新的竞拍出价！</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1231" class="ax_default box_2">
+          <div id="u1231_div" class=""></div>
+          <div id="u1231_text" class="text ">
+            <p><span>竞拍</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1232" class="ax_default _图片">
+          <img id="u1232_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1233" class="ax_default _文本段落">
+          <div id="u1233_div" class=""></div>
+          <div id="u1233_text" class="text ">
+            <p><span>您出售的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1234" class="ax_default _文本段落">
+          <div id="u1234_div" class=""></div>
+          <div id="u1234_text" class="text ">
+            <p><span>您的底价：2000Joy</span></p><p><span>当前竞拍次数：3次</span></p><p><span>剩余竞拍时间：12分钟</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1235" class="ax_default _文本段落">
+          <div id="u1235_div" class=""></div>
+          <div id="u1235_text" class="text ">
+            <p style="font-size:12px;"><span>当前竞拍价</span></p><p style="font-size:20px;"><span>5000JOY</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1236" class="ax_default box_2">
+          <div id="u1236_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1237" class="ax_default _文本段落">
+          <div id="u1237_div" class=""></div>
+          <div id="u1237_text" class="text ">
+            <p><span>10分钟前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1238" class="ax_default _文本段落">
+          <div id="u1238_div" class=""></div>
+          <div id="u1238_text" class="text ">
+            <p><span>竞拍完成</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1239" class="ax_default box_2">
+          <div id="u1239_div" class=""></div>
+          <div id="u1239_text" class="text ">
+            <p><span>竞拍</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1240" class="ax_default _图片">
+          <img id="u1240_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1241" class="ax_default _文本段落">
+          <div id="u1241_div" class=""></div>
+          <div id="u1241_text" class="text ">
+            <p><span>您出售的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1242" class="ax_default _文本段落">
+          <div id="u1242_div" class=""></div>
+          <div id="u1242_text" class="text ">
+            <p><span>您的底价：2000Joy</span></p><p><span>累计竞拍次数：3次</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1243" class="ax_default _文本段落">
+          <div id="u1243_div" class=""></div>
+          <div id="u1243_text" class="text ">
+            <p style="font-size:12px;"><span>竞拍成交价</span></p><p><span style="font-size:20px;">5000JOY </span><span style="font-size:12px;">已到账</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1244" class="ax_default _文本段落">
+          <div id="u1244_div" class=""></div>
+          <div id="u1244_text" class="text ">
+            <p><span>您出售的球员最终由【Barcelona】球队 竞拍成功！</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1245" class="ax_default box_2">
+          <div id="u1245_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1246" class="ax_default _文本段落">
+          <div id="u1246_div" class=""></div>
+          <div id="u1246_text" class="text ">
+            <p><span>1小时前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1247" class="ax_default _文本段落">
+          <div id="u1247_div" class=""></div>
+          <div id="u1247_text" class="text ">
+            <p><span>竞拍结束</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1248" class="ax_default box_2">
+          <div id="u1248_div" class=""></div>
+          <div id="u1248_text" class="text ">
+            <p><span>竞拍</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1249" class="ax_default _图片">
+          <img id="u1249_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1250" class="ax_default _文本段落">
+          <div id="u1250_div" class=""></div>
+          <div id="u1250_text" class="text ">
+            <p><span>您出售的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1251" class="ax_default _文本段落">
+          <div id="u1251_div" class=""></div>
+          <div id="u1251_text" class="text ">
+            <p><span>竞拍已结束，您出售的球员无人参与竞拍~</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1252" class="ax_default" data-left="444" data-top="3695" data-width="360" data-height="640">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1253" class="ax_default box_1">
+          <div id="u1253_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1254" class="ax_default _三级标题">
+          <div id="u1254_div" class=""></div>
+          <div id="u1254_text" class="text ">
+            <p><span>消息通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1255" class="ax_default _图片">
+          <img id="u1255_img" class="img " src="images/交互原型/u41.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1256" class="ax_default box_2">
+          <div id="u1256_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1257" class="ax_default _文本段落">
+          <div id="u1257_div" class=""></div>
+          <div id="u1257_text" class="text ">
+            <p><span>刚刚</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1258" class="ax_default _文本段落">
+          <div id="u1258_div" class=""></div>
+          <div id="u1258_text" class="text ">
+            <p><span>有更高的竞拍出价！</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1259" class="ax_default box_2">
+          <div id="u1259_div" class=""></div>
+          <div id="u1259_text" class="text ">
+            <p><span>竞拍</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1260" class="ax_default _文本段落">
+          <div id="u1260_div" class=""></div>
+          <div id="u1260_text" class="text ">
+            <p style="text-align:center;"><span>您竞拍的球员</span></p><p style="text-align:left;"><span>Lionel Messi</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1261" class="ax_default _文本段落">
+          <div id="u1261_div" class=""></div>
+          <div id="u1261_text" class="text ">
+            <p><span>您的出价：4000Joy</span></p><p><span>当前竞拍次数：3次</span></p><p><span>剩余竞拍时间：12分钟</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1262" class="ax_default _文本段落">
+          <div id="u1262_div" class=""></div>
+          <div id="u1262_text" class="text ">
+            <p style="font-size:12px;"><span>当前竞拍价</span></p><p style="font-size:20px;"><span>5000JOY</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1263" class="ax_default _图片">
+          <img id="u1263_img" class="img " src="images/push__/u1195.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1264" class="ax_default _文本段落">
+          <div id="u1264_div" class=""></div>
+          <div id="u1264_text" class="text ">
+            <p><span>系统已退回上次竞拍出价的预扣4000JOY币</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1265" class="ax_default box_2">
+          <div id="u1265_div" class=""></div>
+          <div id="u1265_text" class="text ">
+            <p><span>查看竞拍情况</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1266" class="ax_default box_2">
+          <div id="u1266_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1267" class="ax_default _文本段落">
+          <div id="u1267_div" class=""></div>
+          <div id="u1267_text" class="text ">
+            <p><span>10分钟前</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1268" class="ax_default _文本段落">
+          <div id="u1268_div" class=""></div>
+          <div id="u1268_text" class="text ">
+            <p><span>竞拍成功</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1269" class="ax_default box_2">
+          <div id="u1269_div" class=""></div>
+          <div id="u1269_text" class="text ">
+            <p><span>竞拍</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u1270" class="ax_default _图片">
+          <img id="u1270_img" class="img " src="images/push__/u1196.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1271" class="ax_default _文本段落">
+          <div id="u1271_div" class=""></div>
+          <div id="u1271_text" class="text ">
+            <p><span>您竞拍的球员</span></p><p><span>Mario Götze</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1272" class="ax_default _文本段落">
+          <div id="u1272_div" class=""></div>
+          <div id="u1272_text" class="text ">
+            <p><span>累计竞拍次数：3次</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1273" class="ax_default _文本段落">
+          <div id="u1273_div" class=""></div>
+          <div id="u1273_text" class="text ">
+            <p style="font-size:12px;"><span>最终成交价</span></p><p style="font-size:20px;"><span>5000JOY</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u1274" class="ax_default _文本段落">
+          <div id="u1274_div" class=""></div>
+          <div id="u1274_text" class="text ">
+            <p><span>恭喜您竞拍成功，球员已完成交易转入您的球队！</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1275" class="ax_default box_1">
+        <div id="u1275_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1276" class="ax_default _三级标题">
+        <div id="u1276_div" class=""></div>
+        <div id="u1276_text" class="text ">
+          <p><span>球员合约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1277" class="ax_default _图片">
+        <img id="u1277_img" class="img " src="images/交互原型/u41.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1278" class="ax_default box_2">
+        <div id="u1278_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1279" class="ax_default _文本段落">
+        <div id="u1279_div" class=""></div>
+        <div id="u1279_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1280" class="ax_default _文本段落">
+        <div id="u1280_div" class=""></div>
+        <div id="u1280_text" class="text ">
+          <p><span>球员已解约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1281" class="ax_default box_2">
+        <div id="u1281_div" class=""></div>
+        <div id="u1281_text" class="text ">
+          <p><span>解约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1282" class="ax_default _文本段落">
+        <div id="u1282_div" class=""></div>
+        <div id="u1282_text" class="text ">
+          <p><span>Lionel Messi</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1283" class="ax_default _图片">
+        <img id="u1283_img" class="img " src="images/push__/u1195.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1284" class="ax_default _文本段落">
+        <div id="u1284_div" class=""></div>
+        <div id="u1284_text" class="text ">
+          <p><span>由于您未对球员【Lionel Messi】续约，现已解约~</span></p><p><span>解约时间为2018/02/28 15:21:09</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1285" class="ax_default _文本段落">
+        <div id="u1285_div" class=""></div>
+        <div id="u1285_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">消息列表显示方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、消息显示排序</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 按消息发出时间倒序排列</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、消息归类显示</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 按消息类型分类显示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1286" class="ax_default box_1">
+        <div id="u1286_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1287" class="ax_default _三级标题">
+        <div id="u1287_div" class=""></div>
+        <div id="u1287_text" class="text ">
+          <p><span>消息通知</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1288" class="ax_default _图片">
+        <img id="u1288_img" class="img " src="images/交互原型/u41.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1289" class="ax_default box_2">
+        <div id="u1289_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1290" class="ax_default _图片">
+        <img id="u1290_img" class="img " src="images/交互原型/u283.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1291" class="ax_default _文本段落">
+        <div id="u1291_div" class=""></div>
+        <div id="u1291_text" class="text ">
+          <p><span>联赛结果</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1292" class="ax_default _文本段落">
+        <div id="u1292_div" class=""></div>
+        <div id="u1292_text" class="text ">
+          <p><span>您的球队在本轮联赛中获得第19名，已降级~</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1293" class="ax_default _文本段落">
+        <div id="u1293_div" class=""></div>
+        <div id="u1293_text" class="text ">
+          <p><span>刚刚</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1294" class="ax_default box_2">
+        <div id="u1294_div" class=""></div>
+        <div id="u1294_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1295" class="ax_default box_2">
+        <div id="u1295_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1296" class="ax_default _文本段落">
+        <div id="u1296_div" class=""></div>
+        <div id="u1296_text" class="text ">
+          <p><span>球员训练</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1297" class="ax_default _文本段落">
+        <div id="u1297_div" class=""></div>
+        <div id="u1297_text" class="text ">
+          <p><span>【Barcelona】球队 向您发出球员训练邀请&nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1298" class="ax_default _文本段落">
+        <div id="u1298_div" class=""></div>
+        <div id="u1298_text" class="text ">
+          <p><span>刚刚</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1299" class="ax_default _图片">
+        <img id="u1299_img" class="img " src="images/交互原型/u34.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1300" class="ax_default box_2">
+        <div id="u1300_div" class=""></div>
+        <div id="u1300_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1301" class="ax_default line">
+        <img id="u1301_img" class="img " src="images/push__/u1301.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1302" class="ax_default box_2">
+        <div id="u1302_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1303" class="ax_default _文本段落">
+        <div id="u1303_div" class=""></div>
+        <div id="u1303_text" class="text ">
+          <p><span>球员竞拍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1304" class="ax_default _文本段落">
+        <div id="u1304_div" class=""></div>
+        <div id="u1304_text" class="text ">
+          <p><span>您出售的球员最终由【Barcelona】球队 竞拍成功！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1305" class="ax_default _文本段落">
+        <div id="u1305_div" class=""></div>
+        <div id="u1305_text" class="text ">
+          <p><span>刚刚</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1306" class="ax_default _图片">
+        <img id="u1306_img" class="img " src="images/交互原型/u35.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1307" class="ax_default box_2">
+        <div id="u1307_div" class=""></div>
+        <div id="u1307_text" class="text ">
+          <p><span>2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1308" class="ax_default box_2">
+        <div id="u1308_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1309" class="ax_default _文本段落">
+        <div id="u1309_div" class=""></div>
+        <div id="u1309_text" class="text ">
+          <p><span>球员合约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1310" class="ax_default _文本段落">
+        <div id="u1310_div" class=""></div>
+        <div id="u1310_text" class="text ">
+          <p><span>您的球员【Lionel Messi】已进入续约期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1311" class="ax_default _文本段落">
+        <div id="u1311_div" class=""></div>
+        <div id="u1311_text" class="text ">
+          <p><span>刚刚</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1312" class="ax_default box_2">
+        <div id="u1312_div" class=""></div>
+        <div id="u1312_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1313" class="ax_default _图片">
+        <img id="u1313_img" class="img " src="images/交互原型/u33.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1314" class="ax_default box_2">
+        <div id="u1314_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1315" class="ax_default _文本段落">
+        <div id="u1315_div" class=""></div>
+        <div id="u1315_text" class="text ">
+          <p><span>系统消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1316" class="ax_default _文本段落">
+        <div id="u1316_div" class=""></div>
+        <div id="u1316_text" class="text ">
+          <p><span>欢迎进入区块链football，点击领取新手礼包</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1317" class="ax_default _文本段落">
+        <div id="u1317_div" class=""></div>
+        <div id="u1317_text" class="text ">
+          <p><span>刚刚</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1318" class="ax_default _图片">
+        <img id="u1318_img" class="img " src="images/push__/u1318.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1319" class="ax_default line">
+        <img id="u1319_img" class="img " src="images/push__/u1301.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1320" class="ax_default line">
+        <img id="u1320_img" class="img " src="images/push__/u1301.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1321" class="ax_default line">
+        <img id="u1321_img" class="img " src="images/push__/u1301.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1322" class="ax_default line">
+        <img id="u1322_img" class="img " src="images/push__/u1301.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1323" class="ax_default line">
+        <img id="u1323_img" class="img " src="images/push__/u1301.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1324" class="ax_default _文本段落">
+        <div id="u1324_div" class=""></div>
+        <div id="u1324_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">竞拍进行中，有新的竞拍出价的push</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 有买家成功出价参与球员竞拍</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 通知当前球员的卖家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 通知上一位出价玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、卖方玩家收到的消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍的球员、当前价格、剩余竞拍时间、竞拍次数</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、上一位出价玩家收到的消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍球员、当前价格、上一轮出价、剩余竞拍时间、竞拍次数以及预扣款退还提醒</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 若当前球员仍处于竞拍未截止状态，继允许点击跳转至球员竞拍页面继续参与竞拍</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">5、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 系统通知：用户处于APP外时通过手机系统push进行通知提醒，点击进入消息界面</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡：用户处于APP内时，显示消息气泡引导用户查阅消息，点击已读后消除数字气泡</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1325" class="ax_default _文本段落">
+        <div id="u1325_div" class=""></div>
+        <div id="u1325_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">竞拍结果push</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 竞拍结束</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员卖方玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 最高出价玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、成功卖出球员后卖方收到的消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 出售的球员、买入方球队、成交价、底价、竞拍次数</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、成功买入球员后买方收到的消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 买入的球员、成功转入球队提醒、成交价、竞拍次数</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">5、竞拍已结束且无人出价竞拍，卖方收到消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 出售的球员、无人竞拍提醒</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">6、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 系统通知：用户处于APP外时通过手机系统push进行通知提醒，点击进入此消息界面</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡：用户处于APP内时，显示消息气泡引导用户查阅消息，点击已读后消除数字气泡</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1326" class="ax_default box_2">
+        <div id="u1326_div" class=""></div>
+        <div id="u1326_text" class="text ">
+          <p><span>球员竞拍页面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1327" class="ax_default box_2">
+        <div id="u1327_div" class=""></div>
+        <div id="u1327_text" class="text ">
+          <p><span>竞拍已结束提示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u1328" class="ax_default flow_shape">
+        <img id="u1328_img" class="img " src="images/启动app/u654.png"/>
+        <div id="u1328_text" class="text ">
+          <p><span>当前球员是否仍处于竞拍状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u1329" class="ax_default _连接线">
+        <img id="u1329_seg0" class="img " src="images/push__/u1329_seg0.png" alt="u1329_seg0"/>
+        <img id="u1329_seg1" class="img " src="images/启动app/u655_seg1.png" alt="u1329_seg1"/>
+        <div id="u1329_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u1330" class="ax_default _连接线">
+        <img id="u1330_seg0" class="img " src="images/push__/u1330_seg0.png" alt="u1330_seg0"/>
+        <img id="u1330_seg1" class="img " src="images/push__/u1330_seg1.png" alt="u1330_seg1"/>
+        <img id="u1330_seg2" class="img " src="images/启动app/u655_seg1.png" alt="u1330_seg2"/>
+        <div id="u1330_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u1331" class="ax_default _连接线">
+        <img id="u1331_seg0" class="img " src="images/push__/u1331_seg0.png" alt="u1331_seg0"/>
+        <img id="u1331_seg1" class="img " src="images/push__/u1331_seg1.png" alt="u1331_seg1"/>
+        <img id="u1331_seg2" class="img " src="images/启动app/u655_seg1.png" alt="u1331_seg2"/>
+        <div id="u1331_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1332" class="ax_default _文本段落">
+        <div id="u1332_div" class=""></div>
+        <div id="u1332_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">球员续约提现push</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员进入续约期后，玩家每日首次启动APP时</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员进入续约期的玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 显示文案：球员信息+续约说明</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 球员续约：点击进入球员信息页进行续约操作并关闭弹窗</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 不再提醒：点击操作后不再弹出当前球员本次续约期内的续约提醒，并关闭弹窗</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; APP启动后弹出消息面板</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1333" class="ax_default" data-left="50" data-top="4809" data-width="360" data-height="642">
+
+        <!-- Unnamed (组合) -->
+        <div id="u1334" class="ax_default" data-left="50" data-top="4809" data-width="360" data-height="642">
+
+          <!-- Unnamed (组合) -->
+          <div id="u1335" class="ax_default" data-left="50" data-top="4809" data-width="360" data-height="642">
+
+            <!-- Unnamed (组合) -->
+            <div id="u1336" class="ax_default" data-left="50" data-top="4809" data-width="360" data-height="642">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1337" class="ax_default box_1">
+                <div id="u1337_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1338" class="ax_default _图片">
+                <img id="u1338_img" class="img " src="images/交互原型/u191.jpg"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1339" class="ax_default label">
+                <div id="u1339_div" class=""></div>
+                <div id="u1339_text" class="text ">
+                  <p><span>Barcelona</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1340" class="ax_default _图片">
+                <img id="u1340_img" class="img " src="images/交互原型/u114.png"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1341" class="ax_default box_1">
+                <div id="u1341_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1342" class="ax_default box_2">
+                <div id="u1342_div" class=""></div>
+                <div id="u1342_text" class="text ">
+                  <p><span>报名联赛</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1343" class="ax_default _图片">
+                <img id="u1343_img" class="img " src="images/交互原型/u197.png"/>
+              </div>
+
+              <!-- Unnamed (椭圆形) -->
+              <div id="u1344" class="ax_default ellipse">
+                <img id="u1344_img" class="img " src="images/交互原型/u198.png"/>
+                <div id="u1344_text" class="text ">
+                  <p><span>2</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1345" class="ax_default _图片">
+                <img id="u1345_img" class="img " src="images/交互原型/u199.png"/>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1346" class="ax_default" data-left="151" data-top="5387" data-width="69" data-height="57">
+
+                <!-- Unnamed (图片) -->
+                <div id="u1347" class="ax_default _图片">
+                  <img id="u1347_img" class="img " src="images/交互原型/u274.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1348" class="ax_default label">
+                  <div id="u1348_div" class=""></div>
+                  <div id="u1348_text" class="text ">
+                    <p><span>转会市场</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1349" class="ax_default" data-left="247" data-top="5387" data-width="57" data-height="57">
+
+                <!-- Unnamed (图片) -->
+                <div id="u1350" class="ax_default _图片">
+                  <img id="u1350_img" class="img " src="images/交互原型/u277.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1351" class="ax_default label">
+                  <div id="u1351_div" class=""></div>
+                  <div id="u1351_text" class="text ">
+                    <p><span>青训营</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1352" class="ax_default" data-left="331" data-top="5387" data-width="69" data-height="57">
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1353" class="ax_default label">
+                  <div id="u1353_div" class=""></div>
+                  <div id="u1353_text" class="text ">
+                    <p><span>我的球队</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1354" class="ax_default _图片">
+                  <img id="u1354_img" class="img " src="images/交互原型/u281.png"/>
+                </div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1355" class="ax_default" data-left="73" data-top="5387" data-width="45" data-height="57">
+
+                <!-- Unnamed (图片) -->
+                <div id="u1356" class="ax_default _图片">
+                  <img id="u1356_img" class="img " src="images/交互原型/u283.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1357" class="ax_default label">
+                  <div id="u1357_div" class=""></div>
+                  <div id="u1357_text" class="text ">
+                    <p><span>联赛</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1358" class="ax_default box_2">
+                <div id="u1358_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1359" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+                <div id="u1359_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1360" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+                <div id="u1360_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1361" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+                <div id="u1361_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1362" class="ax_default" data-left="60" data-top="5025" data-width="340" data-height="244">
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1363" class="ax_default box_2">
+                  <div id="u1363_div" class=""></div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1364" class="ax_default label">
+                  <div id="u1364_div" class=""></div>
+                  <div id="u1364_text" class="text ">
+                    <p><span>排名</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1365" class="ax_default label">
+                  <div id="u1365_div" class=""></div>
+                  <div id="u1365_text" class="text ">
+                    <p><span>球队</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1366" class="ax_default label">
+                  <div id="u1366_div" class=""></div>
+                  <div id="u1366_text" class="text ">
+                    <p><span>胜</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1367" class="ax_default label">
+                  <div id="u1367_div" class=""></div>
+                  <div id="u1367_text" class="text ">
+                    <p><span>负</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1368" class="ax_default label">
+                  <div id="u1368_div" class=""></div>
+                  <div id="u1368_text" class="text ">
+                    <p><span>平</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1369" class="ax_default label">
+                  <div id="u1369_div" class=""></div>
+                  <div id="u1369_text" class="text ">
+                    <p><span>联赛积分</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1370" class="ax_default box_2">
+                  <div id="u1370_div" class=""></div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1371" class="ax_default label">
+                  <div id="u1371_div" class=""></div>
+                  <div id="u1371_text" class="text ">
+                    <p><span>30</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1372" class="ax_default label">
+                  <div id="u1372_div" class=""></div>
+                  <div id="u1372_text" class="text ">
+                    <p><span>5</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1373" class="ax_default label">
+                  <div id="u1373_div" class=""></div>
+                  <div id="u1373_text" class="text ">
+                    <p><span>3</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1374" class="ax_default label">
+                  <div id="u1374_div" class=""></div>
+                  <div id="u1374_text" class="text ">
+                    <p><span>93</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1375" class="ax_default label">
+                  <div id="u1375_div" class=""></div>
+                  <div id="u1375_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;</span><span style="font-family:'LucidaGrande', 'Lucida Grande';">▶&nbsp; </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1376" class="ax_default label">
+                  <div id="u1376_div" class=""></div>
+                  <div id="u1376_text" class="text ">
+                    <p><span>Barcelona</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1377" class="ax_default box_1">
+                  <img id="u1377_img" class="img " src="images/交互原型/u329.png"/>
+                  <div id="u1377_text" class="text ">
+                    <p><span>上届联赛成绩，甲级联赛 排名第1名，晋级超级联赛</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1378" class="ax_default box_2">
+                  <div id="u1378_div" class=""></div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1379" class="ax_default box_1">
+                  <img id="u1379_img" class="img " src="images/交互原型/u331.png"/>
+                  <div id="u1379_text" class="text ">
+                    <p><span>联赛对战胜负明细</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (组合) -->
+                <div id="u1380" class="ax_default" data-left="98" data-top="5163" data-width="288" data-height="80">
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1381" class="ax_default line">
+                    <img id="u1381_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1382" class="ax_default line">
+                    <img id="u1382_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1383" class="ax_default line">
+                    <img id="u1383_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1384" class="ax_default line">
+                    <img id="u1384_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1385" class="ax_default line">
+                    <img id="u1385_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1386" class="ax_default label">
+                  <div id="u1386_div" class=""></div>
+                  <div id="u1386_text" class="text ">
+                    <p><span>胜</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1387" class="ax_default label">
+                  <div id="u1387_div" class=""></div>
+                  <div id="u1387_text" class="text ">
+                    <p><span>负</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1388" class="ax_default label">
+                  <div id="u1388_div" class=""></div>
+                  <div id="u1388_text" class="text ">
+                    <p><span>平</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1389" class="ax_default _图片">
+                  <img id="u1389_img" class="img " src="images/交互原型/u341.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1390" class="ax_default _图片">
+                  <img id="u1390_img" class="img " src="images/交互原型/u342.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1391" class="ax_default _图片">
+                  <img id="u1391_img" class="img " src="images/交互原型/u343.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1392" class="ax_default _图片">
+                  <img id="u1392_img" class="img " src="images/交互原型/u344.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1393" class="ax_default _图片">
+                  <img id="u1393_img" class="img " src="images/交互原型/u345.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1394" class="ax_default label">
+                  <div id="u1394_div" class=""></div>
+                  <div id="u1394_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">0</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:1</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1395" class="ax_default label">
+                  <div id="u1395_div" class=""></div>
+                  <div id="u1395_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">0</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:3</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1396" class="ax_default label">
+                  <div id="u1396_div" class=""></div>
+                  <div id="u1396_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">3</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:3</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1397" class="ax_default label">
+                  <div id="u1397_div" class=""></div>
+                  <div id="u1397_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">3</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:2</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1398" class="ax_default label">
+                  <div id="u1398_div" class=""></div>
+                  <div id="u1398_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">2</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:1</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1399" class="ax_default _图片">
+                  <img id="u1399_img" class="img " src="images/交互原型/u114.png"/>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1400" class="ax_default box_3">
+                <div id="u1400_div" class=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1401" class="ax_default box_2">
+        <div id="u1401_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1402" class="ax_default _文本段落">
+        <div id="u1402_div" class=""></div>
+        <div id="u1402_text" class="text ">
+          <p><span>球员续约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1403" class="ax_default _文本段落">
+        <div id="u1403_div" class=""></div>
+        <div id="u1403_text" class="text ">
+          <p><span>续约球员</span></p><p><span>Lionel Messi</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1404" class="ax_default _文本段落">
+        <div id="u1404_div" class=""></div>
+        <div id="u1404_text" class="text ">
+          <p style="font-size:12px;"><span>球员续约价</span></p><p style="font-size:20px;"><span>10000JOY</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1405" class="ax_default _图片">
+        <img id="u1405_img" class="img " src="images/push__/u1195.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1406" class="ax_default _文本段落">
+        <div id="u1406_div" class=""></div>
+        <div id="u1406_text" class="text ">
+          <p><span>您的球员【Lionel Messi】已进入续约期，请选择是否续约，若合约有效期结束仍未续约，则会失去此球员的归属权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1407" class="ax_default _文本段落">
+        <div id="u1407_div" class=""></div>
+        <div id="u1407_text" class="text ">
+          <p><span>距离合约到期还有5天</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1408" class="ax_default box_2">
+        <div id="u1408_div" class=""></div>
+        <div id="u1408_text" class="text ">
+          <p><span>不再提醒</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1409" class="ax_default box_2">
+        <div id="u1409_div" class=""></div>
+        <div id="u1409_text" class="text ">
+          <p><span>球员续约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1410" class="ax_default" data-left="50" data-top="6755" data-width="360" data-height="642">
+
+        <!-- Unnamed (组合) -->
+        <div id="u1411" class="ax_default" data-left="50" data-top="6755" data-width="360" data-height="642">
+
+          <!-- Unnamed (组合) -->
+          <div id="u1412" class="ax_default" data-left="50" data-top="6755" data-width="360" data-height="642">
+
+            <!-- Unnamed (组合) -->
+            <div id="u1413" class="ax_default" data-left="50" data-top="6755" data-width="360" data-height="642">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1414" class="ax_default box_1">
+                <div id="u1414_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1415" class="ax_default _图片">
+                <img id="u1415_img" class="img " src="images/交互原型/u191.jpg"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1416" class="ax_default label">
+                <div id="u1416_div" class=""></div>
+                <div id="u1416_text" class="text ">
+                  <p><span>Barcelona</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1417" class="ax_default _图片">
+                <img id="u1417_img" class="img " src="images/交互原型/u114.png"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1418" class="ax_default box_1">
+                <div id="u1418_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1419" class="ax_default box_2">
+                <div id="u1419_div" class=""></div>
+                <div id="u1419_text" class="text ">
+                  <p><span>报名联赛</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1420" class="ax_default _图片">
+                <img id="u1420_img" class="img " src="images/交互原型/u197.png"/>
+              </div>
+
+              <!-- Unnamed (椭圆形) -->
+              <div id="u1421" class="ax_default ellipse">
+                <img id="u1421_img" class="img " src="images/交互原型/u198.png"/>
+                <div id="u1421_text" class="text ">
+                  <p><span>2</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u1422" class="ax_default _图片">
+                <img id="u1422_img" class="img " src="images/交互原型/u199.png"/>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1423" class="ax_default" data-left="151" data-top="7333" data-width="69" data-height="57">
+
+                <!-- Unnamed (图片) -->
+                <div id="u1424" class="ax_default _图片">
+                  <img id="u1424_img" class="img " src="images/交互原型/u274.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1425" class="ax_default label">
+                  <div id="u1425_div" class=""></div>
+                  <div id="u1425_text" class="text ">
+                    <p><span>转会市场</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1426" class="ax_default" data-left="247" data-top="7333" data-width="57" data-height="57">
+
+                <!-- Unnamed (图片) -->
+                <div id="u1427" class="ax_default _图片">
+                  <img id="u1427_img" class="img " src="images/交互原型/u277.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1428" class="ax_default label">
+                  <div id="u1428_div" class=""></div>
+                  <div id="u1428_text" class="text ">
+                    <p><span>青训营</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1429" class="ax_default" data-left="331" data-top="7333" data-width="69" data-height="57">
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1430" class="ax_default label">
+                  <div id="u1430_div" class=""></div>
+                  <div id="u1430_text" class="text ">
+                    <p><span>我的球队</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1431" class="ax_default _图片">
+                  <img id="u1431_img" class="img " src="images/交互原型/u281.png"/>
+                </div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1432" class="ax_default" data-left="73" data-top="7333" data-width="45" data-height="57">
+
+                <!-- Unnamed (图片) -->
+                <div id="u1433" class="ax_default _图片">
+                  <img id="u1433_img" class="img " src="images/交互原型/u283.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1434" class="ax_default label">
+                  <div id="u1434_div" class=""></div>
+                  <div id="u1434_text" class="text ">
+                    <p><span>联赛</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1435" class="ax_default box_2">
+                <div id="u1435_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1436" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+                <div id="u1436_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1437" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+                <div id="u1437_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1438" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+                <div id="u1438_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (组合) -->
+              <div id="u1439" class="ax_default" data-left="60" data-top="6971" data-width="340" data-height="244">
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1440" class="ax_default box_2">
+                  <div id="u1440_div" class=""></div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1441" class="ax_default label">
+                  <div id="u1441_div" class=""></div>
+                  <div id="u1441_text" class="text ">
+                    <p><span>排名</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1442" class="ax_default label">
+                  <div id="u1442_div" class=""></div>
+                  <div id="u1442_text" class="text ">
+                    <p><span>球队</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1443" class="ax_default label">
+                  <div id="u1443_div" class=""></div>
+                  <div id="u1443_text" class="text ">
+                    <p><span>胜</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1444" class="ax_default label">
+                  <div id="u1444_div" class=""></div>
+                  <div id="u1444_text" class="text ">
+                    <p><span>负</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1445" class="ax_default label">
+                  <div id="u1445_div" class=""></div>
+                  <div id="u1445_text" class="text ">
+                    <p><span>平</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1446" class="ax_default label">
+                  <div id="u1446_div" class=""></div>
+                  <div id="u1446_text" class="text ">
+                    <p><span>联赛积分</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1447" class="ax_default box_2">
+                  <div id="u1447_div" class=""></div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1448" class="ax_default label">
+                  <div id="u1448_div" class=""></div>
+                  <div id="u1448_text" class="text ">
+                    <p><span>30</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1449" class="ax_default label">
+                  <div id="u1449_div" class=""></div>
+                  <div id="u1449_text" class="text ">
+                    <p><span>5</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1450" class="ax_default label">
+                  <div id="u1450_div" class=""></div>
+                  <div id="u1450_text" class="text ">
+                    <p><span>3</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1451" class="ax_default label">
+                  <div id="u1451_div" class=""></div>
+                  <div id="u1451_text" class="text ">
+                    <p><span>93</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1452" class="ax_default label">
+                  <div id="u1452_div" class=""></div>
+                  <div id="u1452_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp;</span><span style="font-family:'LucidaGrande', 'Lucida Grande';">▶&nbsp; </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1453" class="ax_default label">
+                  <div id="u1453_div" class=""></div>
+                  <div id="u1453_text" class="text ">
+                    <p><span>Barcelona</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1454" class="ax_default box_1">
+                  <img id="u1454_img" class="img " src="images/交互原型/u329.png"/>
+                  <div id="u1454_text" class="text ">
+                    <p><span>上届联赛成绩，甲级联赛 排名第1名，晋级超级联赛</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1455" class="ax_default box_2">
+                  <div id="u1455_div" class=""></div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1456" class="ax_default box_1">
+                  <img id="u1456_img" class="img " src="images/交互原型/u331.png"/>
+                  <div id="u1456_text" class="text ">
+                    <p><span>联赛对战胜负明细</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (组合) -->
+                <div id="u1457" class="ax_default" data-left="98" data-top="7109" data-width="288" data-height="80">
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1458" class="ax_default line">
+                    <img id="u1458_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1459" class="ax_default line">
+                    <img id="u1459_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1460" class="ax_default line">
+                    <img id="u1460_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1461" class="ax_default line">
+                    <img id="u1461_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+
+                  <!-- Unnamed (水平线) -->
+                  <div id="u1462" class="ax_default line">
+                    <img id="u1462_img" class="img " src="images/交互原型/u333.png"/>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1463" class="ax_default label">
+                  <div id="u1463_div" class=""></div>
+                  <div id="u1463_text" class="text ">
+                    <p><span>胜</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1464" class="ax_default label">
+                  <div id="u1464_div" class=""></div>
+                  <div id="u1464_text" class="text ">
+                    <p><span>负</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1465" class="ax_default label">
+                  <div id="u1465_div" class=""></div>
+                  <div id="u1465_text" class="text ">
+                    <p><span>平</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1466" class="ax_default _图片">
+                  <img id="u1466_img" class="img " src="images/交互原型/u341.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1467" class="ax_default _图片">
+                  <img id="u1467_img" class="img " src="images/交互原型/u342.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1468" class="ax_default _图片">
+                  <img id="u1468_img" class="img " src="images/交互原型/u343.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1469" class="ax_default _图片">
+                  <img id="u1469_img" class="img " src="images/交互原型/u344.png"/>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1470" class="ax_default _图片">
+                  <img id="u1470_img" class="img " src="images/交互原型/u345.png"/>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1471" class="ax_default label">
+                  <div id="u1471_div" class=""></div>
+                  <div id="u1471_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">0</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:1</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1472" class="ax_default label">
+                  <div id="u1472_div" class=""></div>
+                  <div id="u1472_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">0</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:3</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1473" class="ax_default label">
+                  <div id="u1473_div" class=""></div>
+                  <div id="u1473_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">3</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:3</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1474" class="ax_default label">
+                  <div id="u1474_div" class=""></div>
+                  <div id="u1474_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">3</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:2</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (矩形) -->
+                <div id="u1475" class="ax_default label">
+                  <div id="u1475_div" class=""></div>
+                  <div id="u1475_text" class="text ">
+                    <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">2</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">:1</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (图片) -->
+                <div id="u1476" class="ax_default _图片">
+                  <img id="u1476_img" class="img " src="images/交互原型/u114.png"/>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u1477" class="ax_default box_3">
+                <div id="u1477_div" class=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1478" class="ax_default box_2">
+        <div id="u1478_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1479" class="ax_default _文本段落">
+        <div id="u1479_div" class=""></div>
+        <div id="u1479_text" class="text ">
+          <p><span>受邀训练</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1480" class="ax_default _文本段落">
+        <div id="u1480_div" class=""></div>
+        <div id="u1480_text" class="text ">
+          <p><span>【Barcelona】球队 向您发出球员训练邀请&nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1481" class="ax_default _文本段落">
+        <div id="u1481_div" class=""></div>
+        <div id="u1481_text" class="text ">
+          <p><span>训练耗时：1小时</span></p><p><span>支付酬劳：1000Joy</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1482" class="ax_default _图片">
+        <img id="u1482_img" class="img " src="images/push__/u1195.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1483" class="ax_default _图片">
+        <img id="u1483_img" class="img " src="images/push__/u1196.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1484" class="ax_default _文本段落">
+        <div id="u1484_div" class=""></div>
+        <div id="u1484_text" class="text ">
+          <p><span>您的球员</span></p><p><span>Lionel Messi</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1485" class="ax_default _文本段落">
+        <div id="u1485_div" class=""></div>
+        <div id="u1485_text" class="text ">
+          <p><span>对方球员</span></p><p><span>Mario Götze</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1486" class="ax_default _文本段落">
+        <div id="u1486_div" class=""></div>
+        <div id="u1486_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">【射门】训练 </span><span style="font-family:'LucidaGrande', 'Lucida Grande';">▶</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1487" class="ax_default box_2">
+        <div id="u1487_div" class=""></div>
+        <div id="u1487_text" class="text ">
+          <p><span>拒绝</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1488" class="ax_default box_2">
+        <div id="u1488_div" class=""></div>
+        <div id="u1488_text" class="text ">
+          <p><span>同意</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1489" class="ax_default _文本段落">
+        <div id="u1489_div" class=""></div>
+        <div id="u1489_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">受邀回应</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 受邀方玩家同意/拒绝训练操作后</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 邀请方玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 系统通知</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、同意后的消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 训练达成提醒说明、双方球员、训练时间、专项训练方向</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">5、拒绝后的消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 训练未达成原因说明、双方球员、专项训练方向、预扣款退还提示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1490" class="ax_default _文本段落">
+        <div id="u1490_div" class=""></div>
+        <div id="u1490_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">训练结束</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 训练结束时</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 邀请训练方玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 训练完成提示+属性增长情况</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 点击消息跳转至球员信息页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1491" class="ax_default box_1">
+        <div id="u1491_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1492" class="ax_default _三级标题">
+        <div id="u1492_div" class=""></div>
+        <div id="u1492_text" class="text ">
+          <p><span>消息通知</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1493" class="ax_default _图片">
+        <img id="u1493_img" class="img " src="images/交互原型/u41.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1494" class="ax_default box_2">
+        <div id="u1494_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1495" class="ax_default _文本段落">
+        <div id="u1495_div" class=""></div>
+        <div id="u1495_text" class="text ">
+          <p><span>2天前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1496" class="ax_default _文本段落">
+        <div id="u1496_div" class=""></div>
+        <div id="u1496_text" class="text ">
+          <p><span>球员训练已结束</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1497" class="ax_default box_2">
+        <div id="u1497_div" class=""></div>
+        <div id="u1497_text" class="text ">
+          <p><span>训练</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1498" class="ax_default _图片">
+        <img id="u1498_img" class="img " src="images/push__/u1195.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1499" class="ax_default _图片">
+        <img id="u1499_img" class="img " src="images/push__/u1196.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1500" class="ax_default _文本段落">
+        <div id="u1500_div" class=""></div>
+        <div id="u1500_text" class="text ">
+          <p><span>对方球员</span></p><p><span>Lionel Messi</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1501" class="ax_default _文本段落">
+        <div id="u1501_div" class=""></div>
+        <div id="u1501_text" class="text ">
+          <p><span>您的球员</span></p><p><span>Mario Götze</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1502" class="ax_default _文本段落">
+        <div id="u1502_div" class=""></div>
+        <div id="u1502_text" class="text ">
+          <p><span>【射门】训练 ▶</span></p><p><span>已结束</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1503" class="ax_default _文本段落">
+        <div id="u1503_div" class=""></div>
+        <div id="u1503_text" class="text ">
+          <p><span>双方球员已脱离【训练】状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1504" class="ax_default _文本段落">
+        <div id="u1504_div" class=""></div>
+        <div id="u1504_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">【Mario Götze】</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">射门综合表现能力有75提升至80</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1505" class="ax_default box_2">
+        <div id="u1505_div" class=""></div>
+        <div id="u1505_text" class="text ">
+          <p><span>查看球员属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1506" class="ax_default _文本段落">
+        <div id="u1506_div" class=""></div>
+        <div id="u1506_text" class="text ">
+          <p><span>属性提升持续时间为30天</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1507" class="ax_default _文本段落">
+        <div id="u1507_div" class=""></div>
+        <div id="u1507_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">属性回落</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、触发条件</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 训练提升的临时属性过期时</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、通知对象</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 当前球员持有玩家</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、提醒方式</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 数字气泡</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">4、消息内容</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 属性下降说明</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 点击消息跳转至球员信息页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (热区) -->
+      <div id="u1508" class="ax_default">
+      </div>
+    </div>
+  </body>
+</html>
