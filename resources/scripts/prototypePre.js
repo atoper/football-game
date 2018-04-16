@@ -1,4 +1,4 @@
-﻿// 8.0.0.3366. Generated 11/10/2017 12:00:54 AM UTC
+﻿// 8.0.0.3372. Generated 2/5/2018 11:05:16 PM UTC
 
 //***** axQuery.js *****//
 $axure = function(query) {
@@ -736,7 +736,8 @@ $axure.internal(function($ax) {
             if(!dObj.annotation) return;
 
             if(dObj.type == 'hyperlink') {
-                var textId = $ax.GetParentIdFromLink(elementId);
+                var parentId = $ax.GetParentIdFromLink(elementId);
+                var textId = $ax.GetTextPanelId(parentId);
 
                 var elementIdQuery = $('#' + elementId);
                 elementIdQuery.after("<span id='" + elementId + "_ann'>&#8203;</span>");
@@ -753,7 +754,7 @@ $axure.internal(function($ax) {
                     return false;
                 });
 
-                _updateLinkLocations(elementId);
+                _updateLinkLocations(parentId);
             } else {
                 if($ax.document.configuration.useLabels) {
                     var label = $('#' + elementId).attr("data-label");
