@@ -2815,8 +2815,8 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:427px;
-  height:100px;
+  width:477px;
+  height:125px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -2834,8 +2834,8 @@
   position:absolute;
   left:50px;
   top:1582px;
-  width:427px;
-  height:100px;
+  width:477px;
+  height:125px;
   font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
   font-style:normal;
   font-size:14px;
@@ -2846,6 +2846,6 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:427px;
+  width:477px;
   white-space:nowrap;
 }
